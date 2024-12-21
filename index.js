@@ -1,10 +1,11 @@
+const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const { createServer } = require('http');
 const { makeExecutableSchema } = require('@graphql-tools/schema');
 const { PubSub } = require('graphql-subscriptions');
 const { WebSocketServer } = require('ws');
 const { useServer } = require('graphql-ws/lib/use/ws');
-
+const { useServer } = require('graphql-ws/lib/use/ws');
 const pubsub = new PubSub();
 
 const startServer = async () => {
